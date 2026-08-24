@@ -3,7 +3,7 @@ LABEL authors="imshe"
 
 ENTRYPOINT ["top", "-b"]
 # Python 3.10 tabanlı hafif işletim sistemi imajı
-FROM python:3.10-slim
+FROM python:3.11-slim
 
 # Çalışma dizinini belirle
 WORKDIR /app
