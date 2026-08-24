@@ -1,0 +1,12 @@
+# Sanal Ortam (Bunu yüklersen GitHub depon çöker)
+venv/
+
+# Loglar (İçinde senin bilgisayarının dosya yolları ve IP'ler olabilir)
+system_logs.log
+
+# Yerel Veritabanı (Geçmiş test verilerini buluta taşımamalıyız)
+frost_predictions.db
+
+# Test Raporları (Sürekli değiştiği için git çakışması yaratır)
+htmlcov/
+.coverage
