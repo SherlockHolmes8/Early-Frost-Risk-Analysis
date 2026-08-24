@@ -1,0 +1,34 @@
+name: Zirai Don CI/CD Pipeline
+
+on:
+  push:
+    branches: [ "main", "master" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Kodu GitHub'dan Çek
+      uses: actions/checkout@v3
+
+    - name: Python 3.11 Kur
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.11"
+
+    - name: Bağımlılıkları Yükle
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install pytest httpx flake8 pytest-cov
+
+    - name: Statik Kod Analizi (Flake8 Linting)
+      run: |
+        # Sözdizimi hatalarını ve kötü kod pratiklerini bulur (E9, F63, F7, F82 kritik hatalardır)
+        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+
+    - name: Otonom Birim Testler ve Kod Kapsamı (Coverage)
+      run: |
+        # Testleri çalıştırır ve testlerin kodun yüzde kaçını kapsadığını ölçer
+        pytest test_system.py --cov=./ --cov-report=term-missing
