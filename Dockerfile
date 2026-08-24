@@ -1,8 +1,4 @@
-FROM ubuntu:latest
-LABEL authors="imshe"
-
-ENTRYPOINT ["top", "-b"]
-# Python 3.10 tabanlı hafif işletim sistemi imajı
+# Python 3.11 tabanlı hafif işletim sistemi imajı
 FROM python:3.11-slim
 
 # Çalışma dizinini belirle
@@ -14,3 +10,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Tüm proje dosyalarını konteynere aktar
 COPY . .
+
+# API'yi arka planda başlat ve Streamlit Arayüzünü Render'ın dış dünyasına aç
+CMD uvicorn api_server:app --host 127.0.0.1 --port 8050 & streamlit run dashboard.py --server.port $PORT --server.address 0.0.0.0
