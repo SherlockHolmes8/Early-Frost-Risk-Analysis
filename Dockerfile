@@ -12,4 +12,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # API'yi arka planda başlat ve Streamlit Arayüzünü Render'ın dış dünyasına aç
-CMD uvicorn api_server:app --host 127.0.0.1 --port 8050 & streamlit run dashboard.py --server.port $PORT --server.address 0.0.0.0
+#CMD uvicorn api_server:app --host 127.0.0.1 --port 8050 & streamlit run dashboard.py --server.port $PORT --server.address 0.0.0.0
+CMD uvicorn api_server:app --host 0.0.0.0 --port 8050 & streamlit run dashboard.py --server.port $PORT --server.address 0.0.0.0 --server.enableCORS=false --server.enableXsrfProtection=false
