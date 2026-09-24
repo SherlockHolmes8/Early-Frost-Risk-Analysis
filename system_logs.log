@@ -236,3 +236,23 @@
 2026-08-24 20:40:44,720 - INFO - LSTM modeli ve MinMaxScaler başarıyla belleğe alındı.
 2026-08-24 20:42:03,536 - INFO - Anlık hava durumu verisi işleniyor.
 2026-08-24 20:42:03,723 - WARNING - KRİTİK UYARI: Don riski tespit edildi! İhtimal: %53.3
+2026-08-25 10:25:14,074 - INFO - Sistem başlatılıyor, yapay zeka modelleri diske yükleniyor.
+2026-08-25 10:25:14,225 - INFO - LSTM modeli ve MinMaxScaler başarıyla belleğe alındı.
+2026-08-25 10:26:08,811 - INFO - Anlık hava durumu verisi işleniyor.
+2026-08-25 10:26:09,202 - WARNING - KRİTİK UYARI: Don riski tespit edildi! İhtimal: %53.0
+2026-08-25 10:26:09,437 - INFO - Anlık hava durumu verisi işleniyor.
+2026-08-25 10:26:09,567 - WARNING - KRİTİK UYARI: Don riski tespit edildi! İhtimal: %53.0
+2026-08-25 10:26:11,570 - INFO - Anlık hava durumu verisi işleniyor.
+2026-08-25 10:26:11,650 - WARNING - KRİTİK UYARI: Don riski tespit edildi! İhtimal: %56.0
+2026-08-25 10:26:16,936 - INFO - Anlık hava durumu verisi işleniyor.
+2026-08-25 10:26:17,017 - WARNING - KRİTİK UYARI: Don riski tespit edildi! İhtimal: %61.0
+2026-08-25 10:26:17,618 - INFO - Anlık hava durumu verisi işleniyor.
+2026-08-25 10:26:17,691 - WARNING - KRİTİK UYARI: Don riski tespit edildi! İhtimal: %61.0
+2026-08-29 00:41:32,034 - INFO - Sistem başlatılıyor, yapay zeka modelleri diske yükleniyor.
+2026-08-29 00:41:32,233 - INFO - LSTM modeli ve MinMaxScaler başarıyla belleğe alındı.
+2026-08-29 00:42:22,886 - INFO - Anlık hava durumu verisi işleniyor.
+2026-08-29 00:42:23,267 - WARNING - KRİTİK UYARI: Don riski tespit edildi! İhtimal: %61.4
+2026-09-04 00:23:33,689 - INFO - Sistem başlatılıyor, yapay zeka modelleri diske yükleniyor.
+2026-09-04 00:23:33,834 - INFO - LSTM modeli ve MinMaxScaler başarıyla belleğe alındı.
+2026-09-04 00:24:01,763 - INFO - Anlık hava durumu verisi işleniyor.
+2026-09-04 00:24:02,098 - WARNING - KRİTİK UYARI: Don riski tespit edildi! İhtimal: %57.0
