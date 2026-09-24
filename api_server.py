@@ -74,7 +74,7 @@ class WeatherData(BaseModel):
 
 # ANALİZ UÇ NOKTASI (Güvenlik Katmanlarıyla Korunuyor)
 @app.post("/predict")
-@limiter.limit("5/minute")
+@limiter.limit("60/minute")
 def predict_frost_risk(request: Request, data: WeatherData, db: Session = Depends(get_db), api_key: str = Depends(verify_api_key)):
     live_data = np.array([[
         data.temperature, data.humidity, data.dew_point,
