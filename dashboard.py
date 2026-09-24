@@ -87,9 +87,8 @@ with tab1:
         st.divider()
 
         if analyze_button:
-            #api_url = "http://127.0.0.1:8050/predict"
+            api_url = "http://127.0.0.1:8050/predict"
             #api_url = "http://0.0.0.0:8050/predict" Render Web Service için
-            api_url = "https://early-frost-risk-analysis.onrender.com/predict"
             payload = {
                 "temperature": temp, "humidity": humidity,
                 "dew_point": dew_point, "wind_speed": wind_speed,
@@ -102,7 +101,7 @@ with tab1:
 
             try:
                 # requests satırına headers=headers parametresini ekliyoruz
-                response = requests.post(api_url, json=payload, headers=headers, timeout=5) #tekrar 35 e güncelle
+                response = requests.post(api_url, json=payload, headers=headers, timeout=35) #tekrar 35 e güncelle
 
                 if response.status_code == 200:
                     result = response.json()
