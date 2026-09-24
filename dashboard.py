@@ -87,8 +87,8 @@ with tab1:
         st.divider()
 
         if analyze_button:
-            api_url = "http://127.0.0.1:8050/predict"
-            #api_url = "http://0.0.0.0:8050/predict" Render Web Service için
+            #api_url = "http://127.0.0.1:8050/predict"
+            api_url = "http://0.0.0.0:8050/predict" #Render Web Service için
             payload = {
                 "temperature": temp, "humidity": humidity,
                 "dew_point": dew_point, "wind_speed": wind_speed,
